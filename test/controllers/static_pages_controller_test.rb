@@ -19,4 +19,11 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select 'title', 'about |RoR Sample app'
   end
 
+  test "should get contact" do
+    get :contact
+    assert_response :success
+    assert_select 'title', 'contact |RoR Sample app'
+  end
+
+ 
 end
