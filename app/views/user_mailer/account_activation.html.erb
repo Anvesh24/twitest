@@ -1,0 +1,9 @@
+<h1>Twitest</h1>
+
+Hi <%= @user.name %>
+
+<p> Welcome to Twitest. One last step. Click the below link to activate </p>
+
+
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %>
